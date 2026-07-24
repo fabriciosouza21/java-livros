@@ -1,0 +1,15 @@
+target/
+*.class
+*.jar
+*.war
+*.ear
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+.vscode/
+.obsidian/
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
