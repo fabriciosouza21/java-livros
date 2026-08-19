@@ -21,6 +21,14 @@ public class item18 {
         // Expecting 3, and get 3!
         IO.println(s2.getAddCount());
 
+
+        InstrumentedGoogleSet s3 = new InstrumentedGoogleSet<String>(new HashSet<>());
+
+        s3.addAll(list);
+
+        // Expecting 3, and get 3!
+        IO.println(s3.getAddCount());
+
     }
 }
 
