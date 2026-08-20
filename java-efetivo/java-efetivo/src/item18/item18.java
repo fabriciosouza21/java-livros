@@ -8,7 +8,7 @@ public class item18 {
     public static void main(String[] args) {
         List<String> list = List.of("Snap", "Crackle", "Pop");
 
-        InstrumentedHashSet s = new InstrumentedHashSet();
+        InstrumentedHashSet<String> s = new InstrumentedHashSet<String>();
 
         s.addAll(list);
         // Expecting 3, but get 6!
@@ -22,7 +22,7 @@ public class item18 {
         IO.println(s2.getAddCount());
 
 
-        InstrumentedGoogleSet s3 = new InstrumentedGoogleSet<String>(new HashSet<>());
+        InstrumentedGoogleSet<String> s3 = new InstrumentedGoogleSet<String>(new HashSet<>());
 
         s3.addAll(list);
 

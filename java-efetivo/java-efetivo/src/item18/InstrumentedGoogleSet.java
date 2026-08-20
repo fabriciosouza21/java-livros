@@ -1,6 +1,7 @@
 package item18;
 
 import com.google.common.collect.ForwardingSet;
+import org.jspecify.annotations.NullMarked;
 
 import java.util.Collection;
 import java.util.Set;
@@ -32,6 +33,7 @@ public class InstrumentedGoogleSet<E> extends ForwardingSet<E> {
     }
 
     @Override
+    @NullMarked
     protected Set<E> delegate() {
         return s;
     }
